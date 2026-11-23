@@ -1,25 +1,25 @@
 class Hardcalc < Formula
   desc "Universal terminal spreadsheet: vectors, matrices, tensors, typed cells and layers, stored as readable Markdown"
   homepage "https://hardcalc.org"
-  version "0.2.3"
+  version "0.2.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.3/hardcalc-aarch64-apple-darwin.tar.xz"
-      sha256 "e41dc96846df19dce3167f4a2c05a62b3f4a05356478b6853348dfcf3aab8988"
+      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.4/hardcalc-aarch64-apple-darwin.tar.xz"
+      sha256 "03d22e0f2db9aa73bc28746b3a51f9430bfdbef4509d535740dbed040e34e479"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.3/hardcalc-x86_64-apple-darwin.tar.xz"
-      sha256 "118f5912efb474f0b868084d9f7276c5fd4ed4965b15093e742c01a2de4cb8f7"
+      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.4/hardcalc-x86_64-apple-darwin.tar.xz"
+      sha256 "4dcf8ac097f3a4790eb276c2524e2394720e3bc9810ce6a28182a23470c60912"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.3/hardcalc-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1091fc05a2d34d3057d6ccf273d3a2872cbd8da4c1460ae9a18ab7fda5721e0c"
+      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.4/hardcalc-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4aa2271fdfcfd7002382e5ea53a65468a77252d18a0f1afb42c2ca375b522b0c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.3/hardcalc-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3822008d4ceb6b4b5256ff068869ee4660f50da73d0e8c0574a615203523ef4e"
+      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.4/hardcalc-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b9812d78522201d7f80f799c4e5ff790e0da5075a54db52838af371b71fa4e5b"
     end
   end
   license "MIT"
