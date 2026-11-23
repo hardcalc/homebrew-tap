@@ -1,28 +1,29 @@
 class Hardcalc < Formula
   desc "Universal terminal spreadsheet: vectors, matrices, tensors, typed cells and layers, stored as readable Markdown"
   homepage "https://hardcalc.org"
-  version "0.2.4"
+  version "0.2.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.4/hardcalc-aarch64-apple-darwin.tar.xz"
-      sha256 "03d22e0f2db9aa73bc28746b3a51f9430bfdbef4509d535740dbed040e34e479"
+      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.5/hardcalc-aarch64-apple-darwin.tar.xz"
+      sha256 "fb1861819326bcef7054ff1d02042a683f556357b38f3358e7610d261a7b17dd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.4/hardcalc-x86_64-apple-darwin.tar.xz"
-      sha256 "4dcf8ac097f3a4790eb276c2524e2394720e3bc9810ce6a28182a23470c60912"
+      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.5/hardcalc-x86_64-apple-darwin.tar.xz"
+      sha256 "1b1bde7aa4e690f62d868f40c088bb3abe199e0db3aae633c3393bf29d8e7fd7"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.4/hardcalc-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4aa2271fdfcfd7002382e5ea53a65468a77252d18a0f1afb42c2ca375b522b0c"
+      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.5/hardcalc-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7914072004353eb9bc64eaa639c811b6def07d705fc6c359a5c0946ae4f2f14b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.4/hardcalc-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "b9812d78522201d7f80f799c4e5ff790e0da5075a54db52838af371b71fa4e5b"
+      url "https://github.com/hardcalc/hardcalc/releases/download/v0.2.5/hardcalc-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6a8137ca622ea3b8f644b3a7ecde080e3fe839a05c3821c198913993f66300ab"
     end
   end
   license "MIT"
+  depends_on "typst"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
